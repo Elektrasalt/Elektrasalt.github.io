@@ -1,0 +1,313 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <script>
+      function openModal() {
+        var modal = document.getElementById("redmodal");
+        modal.style.display = "flex";
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("redmodal");
+        modal.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="menu-icon" />
+    <nav>
+      <label for="menu-icon">&#9776;</label>
+      <ul>
+        <a class="active" href="#Intro">Intro</a>
+        <a href="#best">Bestsellers</a>
+        <a href="#recs">Recommendations</a>
+        <a href="#review">Review</a>
+        <a href="#footer">Footer</a>
+      </ul>
+    </nav>
+
+    <!-- Intro -->
+    <div class="main">
+      <div id="Intro" class="flexbox-container">
+        <img src="resources/bookstore.jpg" alt="bookstore cover" src="image" />
+        <div>
+          <center>
+            <h1>Rushil's Bookstore</h1>
+            <p>Find your perfect pick here!</p>
+            <center><a href="#best" class="back-to-top">Bestsellers</a></center>
+          </center>
+        </div>
+      </div>
+
+      <!-- Bestsellers -->
+      <div id="best">
+        <center>
+          <h1>Bestsellers</h1>
+        </center>
+      </div>
+      <div class="grid">
+        <div class="grid__item">
+          <div class="card">
+            <img
+              class="card__img"
+              src="resources/redrising.jpg"
+              alt="redrising"
+            />
+            <p>
+              <span
+                style="
+                  color: aliceblue;
+                  border-radius: 0.2rem;
+                  background-color: black;
+                  padding: 10px;
+                  margin: 10px;
+                "
+                >Fiction</span
+              >
+            </p>
+            <div class="card__content">
+              <input type="checkbox" id="color-change-checkbox" />
+              <!-- Label for the checkbox (optional) -->
+              <label for="color-change-checkbox" class="color-change-button"
+                >Add</label
+              >
+              <h1 class="card__header">Red Rising</h1>
+              <p class="card__text">
+                Inspired by a longing for justice, and driven by the memory of
+                lost love, Darrow sacrifices everything to infiltrate the
+                legendary Institute, a proving ground for the dominant Gold
+                caste, where the next generation of humanity’s overlords
+                struggle for power. He will be forced to compete for his life
+                and the very future of civilization against the best and most
+                brutal of Society’s ruling class. There, he will stop at nothing
+                to bring down his enemies . . . even if it means he has to
+                become one of them to do so.
+              </p>
+              <button class="card__btn" onclick="openModal()">
+                Know More<span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Recommendations -->
+      <div id="recs" class="card">
+        <center>
+          <h1>Recommendations</h1>
+        </center>
+      </div>
+      <div style="text-align: center; margin-bottom: 75px">
+        <input class="searchbar" type="text" placeholder="Search.." />
+      </div>
+      <div class="grid">
+        <div class="grid__item">
+          <div class="card">
+            <img
+              class="card__img"
+              src="resources/redrising.jpg"
+              alt="redrising"
+            />
+            <p>
+              <span
+                style="
+                  color: aliceblue;
+                  border-radius: 0.2rem;
+                  background-color: black;
+                  padding: 10px;
+                  margin: 10px;
+                "
+                >Fiction</span
+              >
+            </p>
+            <div class="card__content">
+              <input type="checkbox" id="color-change-checkbox2" />
+              <!-- Label for the checkbox (optional) -->
+              <label for="color-change-checkbox2" class="color-change-button"
+                >Add</label
+              >
+              <h1 class="card__header">Red Rising</h1>
+              <p class="card__text">
+                Inspired by a longing for justice, and driven by the memory of
+                lost love, Darrow sacrifices everything to infiltrate the
+                legendary Institute, a proving ground for the dominant Gold
+                caste, where the next generation of humanity’s overlords
+                struggle for power. He will be forced to compete for his life
+                and the very future of civilization against the best and most
+                brutal of Society’s ruling class. There, he will stop at nothing
+                to bring down his enemies . . . even if it means he has to
+                become one of them to do so.
+              </p>
+              <button class="card__btn" onclick="openModal()">
+                Know More<span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card">
+            <img
+              class="card__img"
+              src="resources/war of gods.jpg"
+              alt="redrising"
+            />
+            <p>
+              <span
+                style="
+                  color: aliceblue;
+                  border-radius: 0.2rem;
+                  background-color: black;
+                  padding: 10px;
+                  margin: 10px;
+                "
+                >Fiction</span
+              >
+            </p>
+            <div class="card__content">
+              <input type="checkbox" id="color-change-checkbox2" />
+              <!-- Label for the checkbox (optional) -->
+              <label for="color-change-checkbox2" class="color-change-button"
+                >Add</label
+              >
+              <h1 class="card__header">War of Gods</h1>
+              <p class="card__text">
+                From Africa to Asgard, to an invisible island in the Pacific and
+                the Bone Road of a forgotten world, Fi and Zeke must come to
+                grips with who they are - and accept what they are becoming
+                -wielders of ancient and dangerous powers, warriors, and
+                hopefully, heroes.
+              </p>
+              <button class="card__btn" onclick="openModal()">
+                Know More<span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+      <br /><br /><br />
+      <!-- Review -->
+      <div id="review" class="card">
+        <center>
+          <h1>Reviews</h1>
+        </center>
+      </div>
+      <br /><br /><br />
+
+      <div class="grid">
+        <div class="grid__item">
+          <div class="card">
+            <img class="card__img" src="resources/osama.jpg" alt="person" />
+            <div class="card__content">
+              <h1 class="card__header">Osama Bin Laden</h1>
+              <p class="card__text">
+                "Red Rising" by Pierce Brown is a riveting science fiction novel
+                that introduces readers to a meticulously crafted dystopian
+                world. With a fast-paced narrative, compelling characters, and
+                unexpected twists, it's a thrilling exploration of power,
+                rebellion, and the cost of change. Brown's storytelling prowess
+                makes "Red Rising" an engaging and thought-provoking read for
+                fans of the genre.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="reviewcontainer">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your last name.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="review">Review</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="review"
+                name="review"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <button type="button">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="footer">
+        <div class="row social" align="center">
+          <a target="blank" href="https://www.linkedin.com"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="blank" href="https://www.youtube.com/"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a target="blank" href="https://twitter.com/"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a target="blank" href="https://www.facebook.com/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a target="blank" href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <a href="#" target="_blank">Terms and Conditions</a>
+        <a href="#" target="_blank">Privacy Policy</a>
+        <a href="#" target="_blank">Copyright Information</a>
+        <center><a href="#Intro" class="back-to-top">Back to Top</a></center>
+      </div>
+
+      <div class="modal" id="redmodal">
+        <div class="modal-content">
+          <img src="resources/redrising.jpg" alt="Product Image" />
+          <h2>Red Rising</h2>
+          <p>lmao</p>
+          <button class="close-button" onclick="closeModal()">Buy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
