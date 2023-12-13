@@ -83,11 +83,13 @@ nav a:hover {
   justify-content: center;
   max-width: 50%;
 }
+
 .flexbox-container img {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
   height: auto;
+  scale: 0.5;
 }
 
 .color-change-button {
